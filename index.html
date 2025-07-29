@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atco CNG Services - Professional CNG Conversion & Servicing</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Atco CNG Services</h1>
+    <button class="mobile-menu-btn" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav class="main-nav">
+      <a href="#services"><i class="fas fa-tools"></i> Services</a>
+      <a href="#benefits"><i class="fas fa-leaf"></i> Benefits</a>
+      <a href="#pricing"><i class="fas fa-tag"></i> Pricing</a>
+      <a href="#booking"><i class="fas fa-calendar-check"></i> Book Now</a>
+      <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Drive clean. Drive smart.</h2>
+    <p>Professional CNG Conversion, Installation & Monthly Servicing Across Nigeria</p>
+    <a href="#booking" class="cta-button">Book Your Conversion Today</a>
+  </div>
+
+  <div class="section services" id="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fas fa-home service-icon"></i>
+        <h3>Home-based CNG Conversion</h3>
+        <p>We come to you for complete vehicle conversion to CNG fuel system</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-gas-pump service-icon"></i>
+        <h3>Cylinder Installation</h3>
+        <p>Professional installation of CNG cylinders with safety certification</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-calendar-alt service-icon"></i>
+        <h3>Monthly Servicing</h3>
+        <p>Regular maintenance to keep your CNG system running optimally</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-search service-icon"></i>
+        <h3>Leak Detection</h3>
+        <p>Comprehensive safety checks and ECU testing</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section benefits" id="benefits">
+    <h2>Why Choose CNG?</h2>
+    <div class="benefits-content">
+      <div class="benefit-item">
+        <i class="fas fa-money-bill-wave benefit-icon"></i>
+        <h3>Save 40-60% on Fuel Costs</h3>
+        <p>CNG is significantly cheaper than petrol or diesel</p>
+      </div>
+      <div class="benefit-item">
+        <i class="fas fa-globe-africa benefit-icon"></i>
+        <h3>Eco-Friendly</h3>
+        <p>Reduces harmful emissions by up to 90% compared to petrol</p>
+      </div>
+      <div class="benefit-item">
+        <i class="fas fa-car benefit-icon"></i>
+        <h3>Better Engine Life</h3>
+        <p>Cleaner burning fuel means less engine wear and tear</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section pricing" id="pricing">
+    <h2>Service Pricing</h2>
+    <div class="pricing-table">
+      <div class="pricing-card">
+        <h3>Basic Conversion</h3>
+        <p class="price">From ₦250,000</p>
+        <ul>
+          <li>For 4-cylinder engines</li>
+          <li>Includes 1 cylinder</li>
+          <li>Basic ECU setup</li>
+        </ul>
+      </div>
+      <div class="pricing-card featured">
+        <h3>Standard Conversion</h3>
+        <p class="price">From ₦350,000</p>
+        <ul>
+          <li>For 6-cylinder engines</li>
+          <li>Includes 2 cylinders</li>
+          <li>Advanced ECU setup</li>
+        </ul>
+      </div>
+      <div class="pricing-card">
+        <h3>Premium Conversion</h3>
+        <p class="price">From ₦450,000</p>
+        <ul>
+          <li>For 8-cylinder engines</li>
+          <li>Includes 2-3 cylinders</li>
+          <li>Premium ECU with diagnostics</li>
+        </ul>
+      </div>
+    </div>
+    <p class="note">* Exact pricing depends on vehicle make and model. Contact us for accurate quote.</p>
+  </div>
+
+  <div class="section booking" id="booking">
+    <h2>Book a Conversion</h2>
+    <div class="booking-form">
+      <form id="conversionForm">
+        <div class="form-message" id="formMessage"></div>
+        
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="vehicleType">Vehicle Type</label>
+          <input type="text" id="vehicleType" name="vehicleType" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="engineType">Engine Type</label>
+          <select id="engineType" name="engineType" required>
+            <option value="">Select Engine Type</option>
+            <option value="V4">V4</option>
+            <option value="V6">V6</option>
+            <option value="V8">V8</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="cylinderCount">Number of Cylinders Needed</label>
+          <input type="number" id="cylinderCount" name="cylinderCount" min="1" max="3" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="preferredDate">Preferred Installation Date</label>
+          <input type="date" id="preferredDate" name="preferredDate" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="address">Installation Address</label>
+          <textarea id="address" name="address" rows="3" required></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label for="notes">Additional Notes</label>
+          <textarea id="notes" name="notes" rows="2"></textarea>
+        </div>
+        
+        <div class="form-group">
+          <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+          <label for="agreeTerms">I agree to the terms of service and privacy policy</label>
+        </div>
+        
+        <button type="submit" class="submit-btn">Submit Booking</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="section contact" id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <div class="contact-method">
+        <i class="fas fa-envelope"></i>
+        <p>Email: <a href="mailto:Atcoebuka@gmail.com">Atcoebuka@gmail.com</a></p>
+      </div>
+      <div class="contact-method">
+        <i class="fas fa-phone"></i>
+        <p>Phone: <a href="tel:+2348123456789">+234 812 345 6789</a></p>
+      </div>
+      <div class="contact-method">
+        <i class="fas fa-map-marker-alt"></i>
+        <p>Service Areas: Lagos, Abuja, Port Harcourt, and surrounding areas</p>
+      </div>
+    </div>
+    <p class="availability">We're available for home installations and customer support every day of the week from 8AM to 6PM.</p>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#booking">Book Now</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 Atco CNG Services. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
