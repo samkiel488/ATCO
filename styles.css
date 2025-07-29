@@ -96,7 +96,7 @@ header h1 {
 .hero {
   text-align: center;
   padding: 5rem 2rem;
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb') center/cover;
+  background-color: black;
   color: var(--white);
 }
 
