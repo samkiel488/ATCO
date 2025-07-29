@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atco CNG Services - Professional CNG Conversion & Servicing</title>
- <link rel="icon" href="atco.jpg" type="image/jpeg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Header remains the same -->
   <header>
     <h1>Atco CNG Services</h1>
     <button class="mobile-menu-btn" aria-label="Toggle navigation">
@@ -23,12 +23,14 @@
     </nav>
   </header>
 
+  <!-- Hero section remains the same -->
   <div class="hero">
     <h2>Drive clean. Drive smart.</h2>
-    <p>Professional CNG Conversion, Installation & Monthly Servicing Across Nigeria</p>
+    <p>Professional CNG Conversion, Installation & Monthly Servicing</p>
     <a href="#booking" class="cta-button">Book Your Conversion Today</a>
   </div>
 
+  <!-- Services section remains the same -->
   <div class="section services" id="services">
     <h2>Our Services</h2>
     <div class="services-grid">
@@ -55,6 +57,7 @@
     </div>
   </div>
 
+  <!-- Benefits section remains the same -->
   <div class="section benefits" id="benefits">
     <h2>Why Choose CNG?</h2>
     <div class="benefits-content">
@@ -76,40 +79,30 @@
     </div>
   </div>
 
+  <!-- Updated Pricing section -->
   <div class="section pricing" id="pricing">
     <h2>Service Pricing</h2>
-    <div class="pricing-table">
-      <div class="pricing-card">
-        <h3>Basic Conversion</h3>
-        <p class="price">From ₦250,000</p>
-        <ul>
-          <li>For 4-cylinder engines</li>
-          <li>Includes 1 cylinder</li>
-          <li>Basic ECU setup</li>
-        </ul>
+    <div class="pricing-simple">
+      <div class="price-item">
+        <h3>V4 Engine Conversion</h3>
+        <p class="price">$950</p>
+        <p>Includes 1 cylinder installation and full conversion</p>
       </div>
-      <div class="pricing-card featured">
-        <h3>Standard Conversion</h3>
-        <p class="price">From ₦350,000</p>
-        <ul>
-          <li>For 6-cylinder engines</li>
-          <li>Includes 2 cylinders</li>
-          <li>Advanced ECU setup</li>
-        </ul>
+      <div class="price-item">
+        <h3>V6 Engine Conversion</h3>
+        <p class="price">$1200</p>
+        <p>Includes 1 cylinder installation and full conversion</p>
       </div>
-      <div class="pricing-card">
-        <h3>Premium Conversion</h3>
-        <p class="price">From ₦450,000</p>
-        <ul>
-          <li>For 8-cylinder engines</li>
-          <li>Includes 2-3 cylinders</li>
-          <li>Premium ECU with diagnostics</li>
-        </ul>
+      <div class="price-item">
+        <h3>V8 Engine Conversion</h3>
+        <p class="price">$1450</p>
+        <p>Includes 1 cylinder installation and full conversion</p>
       </div>
     </div>
-    <p class="note">* Exact pricing depends on vehicle make and model. Contact us for accurate quote.</p>
+    <p class="note">All conversions include 1 cylinder. Additional cylinders available upon request.</p>
   </div>
 
+  <!-- Updated Booking Form (removed cylinder count) -->
   <div class="section booking" id="booking">
     <h2>Book a Conversion</h2>
     <div class="booking-form">
@@ -135,15 +128,10 @@
           <label for="engineType">Engine Type</label>
           <select id="engineType" name="engineType" required>
             <option value="">Select Engine Type</option>
-            <option value="V4">V4</option>
-            <option value="V6">V6</option>
-            <option value="V8">V8</option>
+            <option value="V4">V4 ($950)</option>
+            <option value="V6">V6 ($1200)</option>
+            <option value="V8">V8 ($1450)</option>
           </select>
-        </div>
-        
-        <div class="form-group">
-          <label for="cylinderCount">Number of Cylinders Needed</label>
-          <input type="number" id="cylinderCount" name="cylinderCount" min="1" max="3" required>
         </div>
         
         <div class="form-group">
@@ -171,25 +159,27 @@
     </div>
   </div>
 
+  <!-- Contact section remains the same -->
   <div class="section contact" id="contact">
     <h2>Contact Us</h2>
     <div class="contact-info">
+      <div class="contact-method">
+        <i class="fab fa-whatsapp"></i>
+        <p>WhatsApp: <a href="https://wa.me/13153678185" target="_blank">+1 (315) 367-8185</a></p>
+      </div>
       <div class="contact-method">
         <i class="fas fa-envelope"></i>
         <p>Email: <a href="mailto:Atcoebuka@gmail.com">Atcoebuka@gmail.com</a></p>
       </div>
       <div class="contact-method">
-        <i class="fas fa-phone"></i>
-        <p>Phone: <a href="tel:+2348123456789">+234 812 345 6789</a></p>
-      </div>
-      <div class="contact-method">
         <i class="fas fa-map-marker-alt"></i>
-        <p>Service Areas: Lagos, Abuja, Port Harcourt, and surrounding areas</p>
+        <p>Service Areas: Available in multiple locations</p>
       </div>
     </div>
     <p class="availability">We're available for home installations and customer support every day of the week from 8AM to 6PM.</p>
   </div>
 
+  <!-- Footer remains the same -->
   <footer>
     <div class="footer-content">
       <div class="footer-section">
@@ -209,7 +199,7 @@
       </div>
     </div>
     <div class="copyright">
-      <p>&copy; 2025 Atco CNG Services. All rights reserved.</p>
+      <p>&copy; <span id="currentYear"></span> Atco CNG Services. All rights reserved.</p>
     </div>
   </footer>
 
