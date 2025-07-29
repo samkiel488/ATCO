@@ -433,3 +433,34 @@ footer {
   }
 }
 
+/* Add to existing styles.css */
+.pricing-simple {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.price-item {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.price-item h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.price-item .price {
+  font-size: 1.8rem;
+  color: var(--primary-dark);
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.price-item p {
+  color: var(--dark-gray);
+}
